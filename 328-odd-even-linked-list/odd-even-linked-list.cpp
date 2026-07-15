@@ -5,7 +5,7 @@ public:
             return head;
         }
         ListNode* odd = head;
-        ListNode* even = head->next;
+        ListNode* even = odd->next;
         ListNode* evennode = even;
         while(even && even->next){
             odd->next = even->next;
